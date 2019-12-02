@@ -6,34 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vue Listado de Tareas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="app">
       <div class="container">
         <div class="jumbotron">
-          <h1>{{titulo}}</h1>
-          <div class="input-group">
-            <input class="form-control"
-              type="text"
-              v-model="nuevaTarea"
-              v-on:keyup.13="agregarTarea()"
-            />
-            <span class="input-group-btn">
-                <button class="btn btn-primary" v-on:click="agregarTarea()">Agregar tarea</button>
-            </span>
-          </div>
-          <ul class="list-group">
-            <li v-for="tarea of tareas" class="list-group-item mt-2git ">
-              {{tarea.texto}}
-            </li>
-          </ul>
+            <titulo></titulo>
+            <nueva-tarea></nueva-tarea>
+            <lista-tareas></lista-tareas>
         </div>
       </div>
     </div>
     <!-- development version, includes helpful console warnings -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- development version, includes helpful console warnings -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="js/bootstrap.min.js"></script>
+
     <!-- development version, includes helpful console warnings -->
     <script src="../vue.js"></script>
     <!-- Mis Script de vue.js -->
