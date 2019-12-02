@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS</title>
+
+</head>
+<body>
+    <div class="vue">
+<!--         <template>
+            <ul>
+                <li v-for="pais in paises">{{pais}}</li>
+            </ul>
+        </template> -->
+        <input type="text" v-model="nuevoUsuario">
+        <button v-on:click="agregarUsuario">Agregar usuario</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>No:#</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(usuario, indice) of usuarios">
+                    <td>{{indice + 1}}</td>
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.telefono}}</td>
+                    <td>{{usuario.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="color:red" v-if="advertencia">Agrega un nombre correcto</p>
+    </div>
+<!-- development version, includes helpful console warnings -->
+    <script src="../vue.js"></script>  
+<!-- Mis Script de vue.js --> 
+<script src="v-for.js"></script>
+</body>
+</html>

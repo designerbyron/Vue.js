@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS</title>
+
+</head>
+<body>
+    <div class="vue">
+        <h1>{{mensaje}}</h1>
+        <img style="width:100px;" v-bind:src="src">
+        <button v-on:click="mensaje ='cambiarmensaje'">cambiar Mensaje</button>
+        <button v-on:click="destruir">Destuir instancia vue</button>
+    </div>
+<!-- development version, includes helpful console warnings -->
+    <script src="vue.js"></script>  
+<!-- Mis Script de vue.js --> 
+<script src="miscripts.js"></script>
+</body>
+</html>
