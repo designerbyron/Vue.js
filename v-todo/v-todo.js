@@ -35,7 +35,9 @@ Vue.component('nueva-tarea', {
             if(nuevoTexto){
                 this.tareas.push({
                     texto:nuevoTexto, terminada:false
+                    
                 })
+                
             }
             }
     },
